@@ -27,7 +27,7 @@ fruite_choice = streamlit.text_input('What fruit would you like information abou
 streamlit.write('The user entered', fruite_choice)
 
 import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/" + fruite_choice)
 #streamlit.text(fruityvice_response.json()) #just writes the data to the screen
 
 
